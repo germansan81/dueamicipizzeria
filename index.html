@@ -289,6 +289,27 @@ section{ padding:90px 0; }
 .lang-btn.active{ background:var(--burgundy); border-color:var(--burgundy); color:var(--gold); }
 
 
+/* ---------- Galeria ---------- */
+.galeria{ background:var(--cream-deep); }
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:14px;
+}
+.gallery-grid img{
+  width:100%; height:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  border-radius:6px;
+  box-shadow:var(--shadow);
+  transition:transform .3s ease;
+  cursor:pointer;
+}
+.gallery-grid img:hover{ transform:scale(1.03); }
+@media (max-width:860px){
+  .gallery-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+
 /* ---------- Menu ---------- */
 .menu-section{ background:var(--cream); }
 .tabs{
@@ -386,6 +407,7 @@ footer nav a:hover{ color:var(--gold); border-color:var(--gold); }
       <ul id="navList">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
         <li><a href="#menu">Menú</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -457,6 +479,31 @@ footer nav a:hover{ color:var(--gold); border-color:var(--gold); }
   </div>
 </section>
 
+<section class="galeria" id="galeria">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:36px;">
+      <span class="eyebrow">Un vistazo por dentro</span>
+      <h2 class="section-title">Galería</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="images/antipasto-entrada-due-amici-medellin.webp" alt="Antipasto con carne madurada, queso parmesano, aceitunas y tomate seco en Due Amici Pizzeria" loading="lazy">
+      <img src="images/pizza-de-temporada-camarones-due-amici-medellin.webp" alt="Pizza especial de temporada con camarones y cilantro fresco en Due Amici Pizzeria Medellín" loading="lazy">
+      <img src="images/arte-masa-artesanal-pizza-due-amici-medellin.webp" alt="Elaboración artesanal de masa de pizza romana en Due Amici Pizzeria" loading="lazy">
+      <img src="images/te-de-la-casa-ingredientes-due-amici-medellin.webp" alt="Té de la casa con flor de jamaica, hierbabuena, té negro, manzanilla y miel" loading="lazy">
+      <img src="images/pizza-porcion-para-compartir-due-amici-medellin.webp" alt="Porción de pizza artesanal lista para compartir en Due Amici Pizzeria Medellín" loading="lazy">
+      <img src="images/cerveza-de-barril-due-amici-medellin.webp" alt="Cerveza de barril artesanal servida en Due Amici Pizzeria" loading="lazy">
+      <img src="images/galletas-chocolate-postre-due-amici-medellin.webp" alt="Galletas con trozos de chocolate amargo y dulce, postre de Due Amici Pizzeria" loading="lazy">
+      <img src="images/torta-capresse-postre-due-amici-medellin.webp" alt="Torta capresse de chocolate con salsa de frutos rojos en Due Amici Pizzeria" loading="lazy">
+      <img src="images/entrada-tomates-albahaca-tilsit-due-amici-medellin.webp" alt="Par de tomates con albahaca fresca y queso tilsit, entrada de Due Amici Pizzeria" loading="lazy">
+      <img src="images/miercoles-de-vino-copa-due-amici-medellin.webp" alt="Promoción Miércoles de Vino con copa de vino tinto y pizza en Due Amici Pizzeria" loading="lazy">
+      <img src="images/te-de-la-casa-bebida-due-amici-medellin.webp" alt="Té de la casa servido en mesa junto a pan artesanal en Due Amici Pizzeria" loading="lazy">
+      <img src="images/brindis-copas-vino-salud-due-amici-medellin.webp" alt="Brindis con copas de vino tinto y blanco en Due Amici Pizzeria Medellín" loading="lazy">
+      <img src="images/pizza-anchoas-en-el-huerto-due-amici-medellin.webp" alt="Pizza Anchoas en el Huerto recién horneada en Due Amici Pizzeria" loading="lazy">
+      <img src="images/chef-pizzero-arrivederci-due-amici-medellin.webp" alt="Chef de Due Amici Pizzeria preparando una pizza artesanal en la cocina" loading="lazy">
+    </div>
+  </div>
+</section>
+
 <section class="menu-section" id="menu">
   <div class="container">
     <div style="text-align:center; margin-bottom:36px;">
@@ -514,6 +561,7 @@ footer nav a:hover{ color:var(--gold); border-color:var(--gold); }
       <ul style="display:flex; list-style:none; padding:0;">
         <li style="margin:0 12px;"><a href="#inicio">Inicio</a></li>
         <li style="margin:0 12px;"><a href="#nosotros">Nosotros</a></li>
+        <li style="margin:0 12px;"><a href="#galeria">Galería</a></li>
         <li style="margin:0 12px;"><a href="#menu">Menú</a></li>
         <li style="margin:0 12px;"><a href="#ubicacion">Ubicación</a></li>
         <li style="margin:0 12px;"><a href="#contacto">Contacto</a></li>
