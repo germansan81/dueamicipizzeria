@@ -1,0 +1,6 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/qr", "destination": "/menu?utm_source=qr&utm_medium=mesa&utm_campaign=carta", "permanent": false }
+  ]
+}
